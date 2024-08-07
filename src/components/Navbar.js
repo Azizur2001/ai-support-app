@@ -37,11 +37,6 @@ const [showMenu, setShowMenu] = useState(false);
                 Home
               </NavLink>
             </li>
-            <li className="nav__item">
-              <NavLink to="/about-us" className="nav__link">
-                About Us
-              </NavLink>
-            </li>
             {user ? (
               <li className="nav__item">
                 <button className="nav__link nav__cta" onClick={handleLogout}>

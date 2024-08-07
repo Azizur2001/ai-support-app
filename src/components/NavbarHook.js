@@ -25,51 +25,6 @@ const NavbarHook = () => {
             Home
           </NavLink>
         </li>
-        <li>
-          <NavLink
-            to="/news"
-            className={linkClassName}
-            onClick={closeMobileMenu}
-          >
-            News
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/about-us"
-            className={linkClassName}
-            onClick={closeMobileMenu}
-          >
-            About Us
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/favorite"
-            className={linkClassName}
-            onClick={closeMobileMenu}
-          >
-            Favorite
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/location"
-            className={linkClassName}
-            onClick={closeMobileMenu}
-          >
-            Location
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/get-started"
-            className={`${linkClassName} ${buttonClassName}`}
-            onClick={closeMobileMenu}
-          >
-            Get Started
-          </NavLink>
-        </li>
       </ul>
     );
   };

@@ -59,7 +59,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: hsl(31, 92%, 70%);
 }
 
 /* Responsive design */

@@ -1,0 +1,52 @@
+/* src/components/Login.css */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2c2f33;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 60px; /* Adjust for navbar height */
+}
+
+.login-container .login-page {
+  background: #23272a;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: none;
+  width: 100%;
+  max-width: 400px; /* Adjust as needed */
+  box-sizing: border-box;
+}
+
+.login-container .login-page .footer {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.login-container .login-page .footer a {
+  color: #7289da;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .login-container {
+    padding: 10px;
+    height: auto;
+    justify-content: center;
+  }
+
+  .login-container .login-page {
+    width: 100%;
+    padding: 15px;
+  }
+}

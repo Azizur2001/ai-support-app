@@ -51,15 +51,14 @@
 
 
 
-
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const axios = require('axios');
-const config = require('../../config'); // Ensure the path is correct
+const config = require('../config'); // Adjust the path if necessary
 
 const app = express();
-const PORT = 5001;
+const PORT = process.env.PORT || 5001;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -82,7 +81,7 @@ app.post('/api/chat', async (req, res) => {
       temperature: 0.7,
     }, {
       headers: {
-        'Authorization': `Bearer ${config.OPENAI_API_KEY}`,
+        'Authorization': `Bearer ${config.OPENAI_API_KEY}`, // Use API key from config.js
         'Content-Type': 'application/json',
       },
     });
